@@ -6,15 +6,6 @@
       "type": "rust",
       "package": "latest_ic_cdk_backend",
       "candid": "src/latest_ic_cdk_backend/latest_ic_cdk_backend.did"
-    },
-    "latest_ic_cdk_frontend": {
-      "type": "assets",
-      "source": [
-        "src/latest_ic_cdk_frontend/assets"
-      ],
-      "dependencies": [
-        "latest_ic_cdk_backend"
-      ]
     }
   },
   "defaults": {
