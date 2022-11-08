@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "dfx": "0.11.2",
+  "canisters": {
+    "latest_ic_cdk_backend": {
+      "type": "rust",
+      "package": "latest_ic_cdk_backend",
+      "candid": "src/latest_ic_cdk_backend/latest_ic_cdk_backend.did"
+    },
+    "latest_ic_cdk_frontend": {
+      "type": "assets",
+      "source": [
+        "src/latest_ic_cdk_frontend/assets"
+      ],
+      "dependencies": [
+        "latest_ic_cdk_backend"
+      ]
+    }
+  },
+  "defaults": {
+    "build": {
+      "packtool": "",
+      "args": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  }
+}
